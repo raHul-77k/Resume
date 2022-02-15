@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'cont/css/contact.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Let's Chat</title>
+</head>
+<body>
+    <div class="conc">
+        <h1>Connect With Us</h1>
+    <p>We would love to respond to your queries and help you succeed. <br>Feel free to get in touch with us.</p>
+    </div>
+    <div class="container">
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Sent Your Request</h3>
+                <form method="POST" action="{% url 'contact' %}">
+                    {% csrf_token %}
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input id="Font" type="text" name="message-name"  placeholder=""> 
+                        </div>
+
+                        <!-- <div class="input-group">
+                            <label>Phone</label>
+                            <input id="Font" type="text" name="Name" placeholder=""> 
+                        </div> -->
+
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input id="Font" type="email" name="message-email"  placeholder=""> 
+                        </div>
+
+                        <!-- <div class="input-group">
+                            <label>Subject</label>
+                            <input id="Font" type="text" name="message-subject" placeholder=""> 
+                        </div> -->
+
+                        <div class="contact-left" rows="6">
+                            <textarea id="Font" rows="5" name="message" placeholder="Your Message"></textarea>
+                        </div>
+                        
+                        <div class="contact-left">
+                            <!-- <label>Email</label> -->
+                            <button  type="submit">SEND</button>     
+                        </div>
+                    </div>
+                    <!-- <label>Message</label> -->
+                    <!-- <textarea id="Font" rows="5" placeholder="Your Message"></textarea> -->
+                    <!-- <button  type="submit">SEND</button> -->
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Reach Us</h3>
+
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>rrahul772k@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+91 8090016272</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>Civil Line <br>
+                        Shukla Colony Dewa Road, Kalikajipuram, <br>
+                        Barabanki, 225001</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="icon">
+        {% comment %} <i class="fab fa-facebook fa-2x fa-color"></i> {% endcomment %}
+        <a href="https://www.instagram.com/r_r_a_h_u_l/"><i class="fab fa-instagram fa-2x fa-color"></i></a>
+        <a href="https://github.com/raHul-77k"><i class="fab fa-github fa-2x fa-color"></i></a>
+        <a href="https://www.linkedin.com/in/rahul-kumar-064b651b5/"><i class="fab fa-linkedin fa-2x fa-color"></i></a>
+    </div>
+</body>
+</html>

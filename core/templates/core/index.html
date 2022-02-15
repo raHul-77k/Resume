@@ -1,0 +1,197 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rrahul</title>
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+</head>
+<body>
+    <div class="scroll-btn">
+        <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="#home">Portfolio.</a></div>
+           <ul class="menu">
+                <li class ="N"><a href="#home">Home</a></li>
+                <li class ="N"><a href="#about">About</a></li>
+                <li class ="N"><a href="#skills">Skills</a></li>
+                <li class ="N"><a href="#services">WebApp</a></li>
+                <li class ="N"><a href="#contact">Contact</a></li>
+                <div class="cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </ul>
+            
+            <div class="media-icons">
+                <a href="https://github.com/raHul-77k"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rahul-kumar-064b651b5/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/r_r_a_h_u_l/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="cool">
+                <div class="text">
+                    <div class="text-one">Hello,</div>
+                    <div class="typewriter">
+                        <div class="text-two">I'm Rahul Kumar..</div>
+                    </div>
+                    <div class="text-three">Backend Developer</div>
+                    <div class="text-four">From Noida</div>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#contact"><button>Hire Me</button></a>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title"><span>About Me</span></div>
+            <div class="about-details">
+                <div class="right">
+                    <img src="{% static 'core/images/Rahul2.jpeg' %}" alt="">
+                </div>
+                <div class="left">
+                    <div class="topic">Designing Is My Passion</div>
+                    <p>To seek a good & responsible job in professionally managed organization where in my conceptual and functional skills are effectively utilized in a way that contributes to the organization growth coupled with personal growth within the organization!</p>
+                    <div class="button">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="content">
+            <div class="title"><span>My Skills</span></div>
+            <div class="skill-details">
+                <div class="left">
+                    <div class="topic">Skills Reflects Our Knowledge</div>
+                    <p>"Developing web application using django framework"</p>
+                    <p>Django is a nice framework for building any application irrespective of the architecture you choose. It all depends on what you need. Django comes with a number of powerful tools out of the box. It also makes a number of choices for you, so it requires fewer decisions to be made by you or your team.</p>
+                    <div class="experience">
+                        <div class="num">W</div>
+                        <div class="exp"> ant<br>ork experience </div>
+                    </div>
+                </div>
+                <div class="boxes">
+                     <div class="box">
+                        <div class="topic">Django</div>
+                        <div class="num">60%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">DSA</div>
+                        <div class="num">50%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">HTML</div>
+                        <div class="num">90%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">CSS</div>
+                        <div class="num">75%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">Javascript</div>
+                        <div class="num">60%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic">PYTHON</div>
+                        <div class="num">50%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="content">
+            <div class="title"><span>My WebApp</span></div>
+            <div class="boxes">
+                <div class="box animated fadeInLeft">
+                    <div class="icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="topic">
+                        <a href="https://github.com/raHul-77k/studyportal"style="color: black" >Student Study Portal</a>
+                    </div>
+                    <p>This is a Portal that provides all the facilities for student activity at one place</p>
+                </div>
+                <div class="box animated fadeInUp">
+                    <div class="icon">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                    <div class="topic">Add More</div>
+                    <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos possimus odio quaerat fugit doloribus quia.</p> -->
+                </div>
+                <div class="box animated fadeInRight">
+                    <div class="icon">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                    <div class="topic">Add More</div>
+                    <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos possimus odio quaerat fugit doloribus quia.</p> -->
+                </div>
+                <!-- <div class="box">
+                    <div class="icon">
+                        <i class="fab fa-wolf-pack-battalion"></i>
+                    </div>
+                    <div class="topic">Icon Design</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos possimus odio quaerat fugit doloribus quia.</p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <div class="topic">Photography</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos possimus odio quaerat fugit doloribus quia.</p>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-tablet-alt"></i>
+                    </div>
+                    <div class="topic">App Development</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos possimus odio quaerat fugit doloribus quia.</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="title"><span>Contact Me</span></div>
+            <div class="text">
+                <div class="topic">Have Any Project?</div>
+                <p>Then you can contact me here to see if I can help you with any job that requires my skills.</p>
+                <div class="button">
+                    <a href="cont/contact"><button>Let's Chat</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="text">
+            <span>Created By <a href="#">Rahul</a> | &#169; 2021 All Rights Reserved</span>
+        </div>
+    </footer>
+
+    <script src="{% static 'core/js/script.js' %}"></script>
+</body>
+</html>
+
+
+ 
