@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-&ga4a^+nsng-!ffo((89dh*zk)$!x!xjt=8t%hwj6btqh&9t9*
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'resume7'
+    'resume7.herokuapp.com'
 ]
 
 
