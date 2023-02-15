@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-&ga4a^+nsng-!ffo((89dh*zk)$!x!xjt=8t%hwj6btqh&9t9*
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'resume7.herokuapp.com'
+    '.vercel.app', 'now.sh'
 ]
 
 
@@ -130,9 +130,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'static'
-# STATICFILES_DIRS = [BASE_DIR/"static"]
+STATICFILES_DIRS = [BASE_DIR/"static"]
 
 
 
