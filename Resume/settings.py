@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = BASE_DIR / 'templates'
@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-&ga4a^+nsng-!ffo((89dh*zk)$!x!xjt=8t%hwj6btqh&9t9*
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '.vercel.app', 'now.sh'
+    
 ]
 
 
@@ -131,7 +131,7 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles_build','static')
 STATICFILES_DIRS = [BASE_DIR/"static"]
 
 
@@ -143,13 +143,3 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = "rrahul772k@gmail.com"
 EMAIL_HOST_PASSWORD = "avrbohvrsjejwtyq"
 EMAIL_USE_TLS = True
-# EMAIL_USE_SSL = False
-
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_USE_TLS = True
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_PORT = 587
-# EMAIL_HOST_USER = 'raihncse@gmail.com'
-# DEFAULT_FROM_EMAIL = 'raihncse@gmail.com'
-# SERVER_EMAIL = 'raihncse@gmail.com'
-# EMAIL_HOST_PASSWORD = 'xylnudjdiwpojwzm'
